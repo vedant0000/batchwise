@@ -2,7 +2,7 @@ import React from "react"
 import { AppProvider } from "../../context/AppContext"
 import Navbar from "./Topbar"
 import { Routes, Route } from "react-router-dom"
-
+import Chatbot from "../common/chatbot/Chatbot"
 import Home from "../../pages/Home"
 import PostDetail from "../../pages/PostDetails"
 import Communities from "../../pages/Community"
@@ -13,6 +13,8 @@ import Resources from "../../pages/Resources"
 import Bookmarks from "../../pages/Bookmarks"
 import Search from "../common/SearchBar"
 import FloatingActionButton from "../common/FloatingActionButton"
+import Profile from "../../pages/Profile"
+import AIMockInterviewButton from "../common/AIMockInterviewButton"
 
 function Layout() {
   return (
@@ -31,10 +33,13 @@ function Layout() {
             <Route path="/resources" element={<Resources />} />
             <Route path="/search" element={<Search />} />
             <Route path="/bookmarks" element={<Bookmarks />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
 
           <FloatingActionButton />
         </div>
+        <Chatbot />
+        <AIMockInterviewButton />
       </div>
     </AppProvider>
   )

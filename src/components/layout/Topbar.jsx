@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
+import { useAuth } from "../../context/AuthContext"
 import '../../styles/Styles.css';
 
 const Topbar = () => {
@@ -8,6 +9,8 @@ const Topbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [openMenu, setOpenMenu] = useState(null); // 'filters' | 'announcements' | 'chat' | 'profile'
   const navigate = useNavigate();
+
+  const { logout } = useAuth()
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -92,7 +95,7 @@ const Topbar = () => {
           {/* Profile */}
           <div className="nav-item-wrapper">
             <button className="profile-btn" onClick={() => toggleMenu('profile')}>
-              {currentUser.name?.[0] || 'U'}
+              {'0'}
             </button>
             {openMenu === 'profile' && (
               <div className="nav-dropdown">
@@ -102,7 +105,7 @@ const Topbar = () => {
                 </div>
                 <Link to="/profile">Profile</Link>
                 <Link to="/settings">Settings</Link>
-                <button className="logout-btn">Logout</button>
+                <button className="logout-btn" onClick={logout}>Logout</button>
               </div>
             )}
           </div>

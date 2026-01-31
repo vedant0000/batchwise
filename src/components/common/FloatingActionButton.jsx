@@ -24,18 +24,17 @@ const FloatingActionButton = () =>{
       {open && (
         <div className="fab-menu">
           <button onClick={() => console.log("Create new post")}>
-            📝 New Post
+            New Post
           </button>
           <button onClick={() => console.log("Upload resource")}>
-            📎 Upload Resource
+            Upload Resource
           </button>
         </div>
       )}
 
       <button
         className={`fab-button ${open ? "open" : ""}`}
-        onClick={() => setOpen((prev) => !prev)}
-      >
+        onClick={() => setOpen((prev) => !prev)}>
         +
       </button>
     </div>

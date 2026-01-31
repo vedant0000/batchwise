@@ -1,0 +1,81 @@
+.profile-page {
+  padding: 32px;
+  background: #f8fafc;
+}
+
+/* ---------- HEADER ---------- */
+.profile-header {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* ---------- AVATAR ---------- */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #6366f1;
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- INFO ---------- */
+.profile-info h2 {
+  margin-bottom: 12px;
+}
+
+/* ---------- STATS ---------- */
+.profile-stats {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* ---------- BIO ---------- */
+.profile-bio {
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+/* ---------- META ---------- */
+.profile-meta {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* ---------- POSTS GRID ---------- */
+.profile-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* ---------- POST CARD ---------- */
+.profile-post-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease;
+}
+
+.profile-post-card:hover {
+  transform: translateY(-3px);
+}
+
+.no-posts {
+  color: #64748b;
+}
