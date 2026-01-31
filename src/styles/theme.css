@@ -1,0 +1,41 @@
+/* ---------- TOPBAR ---------- */
+.topbar {
+  height: 64px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------- SEARCH BAR ---------- */
+.search-bar input {
+  width: 300px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+/* ---------- NOTIFICATION ---------- */
+.notification-icon {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ---------- PAGE CONTAINER ---------- */
+.page {
+  padding: 24px;
+}
+
+/* ---------- GENERIC CARD ---------- */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
