@@ -3,9 +3,9 @@ export const users = [
   {
     id: 1,
     role: "student",
-    name: "Ved Patil",
+    name: "Ved Hule",
     prn: "PRN2021001",
-    email: "ved.patil@dycoe.edu",
+    email: "ved.hule@dypcoe.edu",
     password: "ved123",
 
     department: "Computer Engineering",
